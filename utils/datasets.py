@@ -89,8 +89,8 @@ class ListDataset(Dataset):
         #  Label
         #---------
 
-        label_path = self.label_files[index % len(self.img_files)].rstrip()
-
+        label_path = self.label_files[index % len(self.img_files)].rstrip() 
+        print(label_path)
         labels = None
         if os.path.exists(label_path):
             labels = np.loadtxt(label_path).reshape(-1, 5)

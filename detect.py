@@ -1,5 +1,6 @@
 from __future__ import division
 
+print("hey")
 from models import *
 from utils.utils import *
 from utils.datasets import *
